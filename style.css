@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body{
+    background-color: rgb(27, 29, 31);
+    color: rgb(214, 192, 192);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.685);
+    font-family: 'Raleway', sans-serif;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-areas: 
+    ". search ."
+    ". cont .";
+    
+}
+
+.container{
+    background-color:rgba(106, 110, 113, 0.055);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308);
+    padding: 50px;
+    border-radius: 10px;
+    /* width: 50vh; */
+    /* height:30vh; */
+    margin:auto;
+    grid-area: cont;
+    min-width: 50vh;
+    min-height: 30vh;
+    position:sticky;
+
+}
+
+.container h1{
+    margin: 5px;
+    font-size: 42px;
+    
+}
+.search-container{
+    padding-top: 30px;
+    padding-bottom: 5px;
+    padding-left: 30px; 
+    /* top:0;
+    right:0; */
+    justify-items: end;
+    grid-area: search;
+    position:sticky;
+}
+.search-container input{
+    min-width: 150px;
+    background-color: rgb(177, 177, 177);
+}
+
+.search-container button{
+    background-color: #86C331;
+    min-width: 75px;
+}
+.control{
+    box-shadow: 1px 1px 2px black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.information{
+    display:block;
+    margin-bottom: 20px
+}
+.information div{
+    display: inline-block;
+}
+
+.weather-header{
+    font-size:28px;
+    vertical-align: 50%;
+}
+
+.temperature{
+    font-size: 38px;
+    vertical-align: 25%;
+}
+
+.bottom-details{
+  
+    font-size: 24px;
+    text-align: right;
+}
